@@ -1,3 +1,15 @@
+import sys
+import os
+print("Python executable:", sys.executable)
+print("Python version:", sys.version)
+print("sys.path:", sys.path)
+
+try:
+    import joblib
+    print("Joblib imported successfully!")
+except ModuleNotFoundError as e:
+    print(f"Error importing joblib: {e}")
+
 import streamlit as st
 import joblib
 import numpy as np
